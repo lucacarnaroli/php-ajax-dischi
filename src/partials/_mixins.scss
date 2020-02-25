@@ -1,8 +1,6 @@
 @mixin flex-row {
 display: flex;
 flex-direction: row;
-justify-content: space-around;
-align-items: flex-start;
 flex-wrap: wrap;
 }
 @mixin flex-column {

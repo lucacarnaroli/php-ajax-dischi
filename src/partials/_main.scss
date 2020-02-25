@@ -1,11 +1,12 @@
 .jumbo {
   background-color: grey;
-  display: flex;
-  flex-direction: row;
+  width: 80%;
+  margin:auto;
+  @include flex-row;
+
 }
 .cd {
   @include flex-column;
-  float: left;
 }
 .poster {
   height: 200px;
