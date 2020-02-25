@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header-box {
+  height: 70px;
+  width: 100%;
+  background-color: black;
+  margin-bottom: 100px;
+}
+
+.jumbo {
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+}
+
+.cd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: left;
+}
+
+.info-album {
+  background-color: red;
+}
+
+.poster {
+  height: 200px;
+  width: 160px;
+}
+
