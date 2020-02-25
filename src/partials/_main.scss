@@ -1,12 +1,14 @@
 .jumbo {
   background-color: grey;
   width: 80%;
-  margin:auto;
+
   @include flex-row;
 
 }
 .cd {
   @include flex-column;
+  background-color: pink;
+  padding: 20px;
 }
 .poster {
   height: 200px;

@@ -14,16 +14,16 @@
 .jumbo {
   background-color: grey;
   width: 80%;
-  margin: auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .cd {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: pink;
+  padding: 20px;
 }
 
 .poster {
