@@ -22,13 +22,11 @@ include _DIR_ . '/../server.php';
         <div class="cd">
         <?php foreach ($database as $value) {?>
           <img class="poster"src="<?php echo $value['poster'] ?>" alt="">
-          <?php foreach ($value as $k => $dati){ ?>
-            <div class="info-album">
-                <?php echo $k?>
-                <?php echo $dati?>
-            </div>
-
-          <?php } ?>
+          <ul>
+            <li><?php echo $value['title'];?></li>
+            <li>  <?php echo $value['author'];?></li>
+            <li><?php echo $value['year'];?></li>
+          </ul>
         <?php } ?>
           </div>
 
