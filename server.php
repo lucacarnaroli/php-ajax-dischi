@@ -39,22 +39,22 @@ $database = [
       'poster' => 'https://img.discogs.com/ko3OQ3ENyKrsdbpiU3kEPRGEH74=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-14826505-1582359304-8022.jpeg.jpg'
     ],
     [
-      'title' => 'New Jersey',
-      'author' => 'Bon Jovi',
-      'year' => 1988,
-      'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg'
+      'title' => 'Californication',
+      'author' => 'Red Hot Chili Peppers',
+      'year' => 1999,
+      'poster' => 'https://img.discogs.com/Z8EVk0ZnqwUaIglUDuxTzWpV_Mw=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1266804-1461290216-7010.jpeg.jpg'
     ],
     [
-      'title' => 'New Jersey',
-      'author' => 'Bon Jovi',
-      'year' => 1988,
-      'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg'
+      'title' => 'Nothing Was The Same',
+      'author' => 'Drake',
+      'year' => 2013,
+      'poster' => 'https://img.discogs.com/QuQXgqCMDcxHRLWqqkkkdMTrqZ8=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-8868835-1470455849-6523.jpeg.jpg'
     ],
     [
-      'title' => 'New Jersey',
-      'author' => 'Bon Jovi',
-      'year' => 1988,
-      'poster' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg'
+      'title' => 'Aretha Now',
+      'author' => 'Aretha Franklin',
+      'year' => 1982,
+      'poster' => 'https://img.discogs.com/W0SXjFvriRx84xyUeDbZwXAxqCg=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-14777443-1582168309-4361.jpeg.jpg'
     ]
 ];
 ?>

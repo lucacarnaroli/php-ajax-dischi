@@ -1,16 +1,35 @@
+main {
+  background-color: rgb(52, 52, 52);
+}
 .jumbo {
-  background-color: grey;
-  width: 80%;
-
+  width: 65%;
+  padding-top: 80px;
+  height: auto;
+  margin: auto;
   @include flex-row;
-
 }
 .cd {
   @include flex-column;
-  background-color: pink;
-  padding: 20px;
+  background-color: black;
+  padding: 2%;
+  margin: 20px;
 }
 .poster {
-  height: 200px;
-  width: 160px;
+  height: 220px;
+  width: 220px;
+}
+.descrizione {
+  margin-top: 10px;
+  color: white;
+  list-style: none;
+  text-align: center;
+}
+.descrizione li {
+  line-height: 1.5;
+}
+.author {
+  color: grey;
+}
+.year {
+  font-size: 10px;
 }

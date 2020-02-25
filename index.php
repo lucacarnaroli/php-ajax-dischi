@@ -14,21 +14,37 @@ include _DIR_ . '/../server.php';
   <body>
     <header>
       <div class="header-box">
-        <img src="" alt="">
+        <div class="logo">
+          <img src="img/spotify.png" alt="">
+        </div>
       </div>
     </header>
     <main>
       <div class="jumbo">
-        <div class="cd">
+
         <?php foreach ($database as $value) {?>
-          <img class="poster"src="<?php echo $value['poster'] ?>" alt="">
-          <ul>
-            <li><?php echo $value['title'];?></li>
-            <li>  <?php echo $value['author'];?></li>
-            <li><?php echo $value['year'];?></li>
-          </ul>
-        <?php } ?>
+          <div class="cd">
+            <img class="poster"src="<?php echo $value['poster'] ?>" alt="">
+            <ul class="descrizione">
+              <li>
+                <h3 class="title">
+                  <?php echo $value['title'];?>
+                </h3>
+              </li>
+              <li>
+                <p class="author">
+                  <?php echo $value['author'];?>
+                </p>
+              </li>
+              <li>
+                <h6 class="year">
+                  <?php echo $value['year'];?>
+                </h6>
+              </li>
+            </ul>
           </div>
+        <?php } ?>
+
 
       </div>
     </main>
