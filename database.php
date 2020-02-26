@@ -38,7 +38,7 @@ $database = [
     ],
     [
       'title' => 'Californication',
-      'author' => 'Red Hot Chili Peppers',
+      'author' => 'RHCP',
       'year' => 1999,
       'poster' => 'https://img.discogs.com/Z8EVk0ZnqwUaIglUDuxTzWpV_Mw=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1266804-1461290216-7010.jpeg.jpg'
     ],
@@ -55,6 +55,5 @@ $database = [
       'poster' => 'https://img.discogs.com/W0SXjFvriRx84xyUeDbZwXAxqCg=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-14777443-1582168309-4361.jpeg.jpg'
     ]
 ];
-header('Content-Type: application/json');
-echo json_encode($database);
+
 ?>

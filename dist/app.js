@@ -15818,20 +15818,17 @@ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"
 var Handlebars = __webpack_require__(/*! handlebars */ "./node_modules/handlebars/dist/cjs/handlebars.js");
 
 $(document).ready(function () {
-  $.ajax({
-    url: "http://localhost:8888/php-ajax-dischi/server-ajax.php",
-    method: "GET",
-    success: function success(data) {
-      console.log(data);
-      printCds(data);
-    },
-    error: function error(richiesta, stato, _error) {
-      alert("E' avvenuto un errore. " + _error);
-    }
+  var query = $('.input').val();
+  callCds(query);
+  $('.input').change(function () {
+    var option = $(this).val();
+    callAuthor(option);
   });
-});
+}); // FUNZIONI
 
 function printCds(cd) {
+  $('.jumbo').html('');
+
   for (var i = 0; i < cd.length; i++) {
     var printCd = cd[i];
     var source = $('#entry-template').html();
@@ -15840,6 +15837,38 @@ function printCds(cd) {
     var html = template(printCd);
     $('.jumbo').append(html);
   }
+} // CHIAMATE AJAX
+
+
+function callCds(cd) {
+  $.ajax({
+    url: "http://localhost:8888/php-ajax-dischi/server-ajax.php",
+    method: "GET",
+    success: function success(data) {
+      // console.log(data);
+      printCds(data);
+    },
+    error: function error(richiesta, stato, _error) {
+      alert("E' avvenuto un errore. " + _error);
+    }
+  });
+}
+
+function callAuthor(author) {
+  $.ajax({
+    url: "http://localhost:8888/php-ajax-dischi/server-ajax.php",
+    method: "GET",
+    data: {
+      author: author
+    },
+    success: function success(data) {
+      // console.log(data);
+      printCds(data);
+    },
+    error: function error(richiesta, stato, _error2) {
+      alert("E' avvenuto un errore. " + _error2);
+    }
+  });
 }
 
 /***/ }),

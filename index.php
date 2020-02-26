@@ -14,6 +14,19 @@
       </div>
     </header>
     <main>
+      <select class="input" name="">
+        <option value="">All</option>
+        <option value="Bon Jovi">Bon Jovi</option>
+        <option value="Pink Floyd">Pink Floyd</option>
+        <option value="Metallica">Metallica</option>
+        <option value="Iggy pop">Iggy pop</option>
+        <option value="U2">U2</option>
+        <option value="Ne-Yo">Ne-Yo</option>
+        <option value="RHCP">RHCP</option>
+        <option value="Drake">Drake</option>
+        <option value="Aretha Franklin">Aretha Franklin</option>
+      </select>
+
       <div class="jumbo">
 
       </div>
