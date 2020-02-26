@@ -5,13 +5,9 @@ $(document).ready(function() {
   $.ajax({
     url: "http://localhost:8888/php-ajax-dischi/server-ajax.php",
     method: "GET",
-    // data: {
-    //   title: '' ,
-    //   author: '' ,
-    //   year: '' ,
-    // },
     success: function (data) {
       console.log(data);
+      printCds(data);
     },
     error: function (richiesta, stato, error) {
       alert("E' avvenuto un errore. " + error);
@@ -28,6 +24,6 @@ function printCds(cd) {
     var source = $('#entry-template').html();;
     var template = Handlebars.compile(source);
     var html = template(printCd);
-    $('.cds').append(html);
+    $('.cd').append(html);
   }
 }

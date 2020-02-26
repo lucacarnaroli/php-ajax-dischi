@@ -14,22 +14,28 @@
       </div>
     </header>
     <main>
+      <div class="jumbo">
+        <div class="cd">
+
+        </div>
+      </div>
+
       <script id="entry-template" type="text/x-handlebars-template">
       <div class="cds">
         <img class="poster"src={{poster}} alt="">
         <ul class="descrizione">
           <li>
-            <h3>{{title}}</h3>
+            <h3 class="title">{{title}}</h3>
           </li>
           <li>
-            <p>{{author}}</p>
+            <p class="author">{{author}}</p>
           </li>
           <li>
-            <h6>{{year}}</h6>
+            <h6 class="year">{{year}}</h6>
           </li>
         </ul>
       </div>
-      
+
       </script>
 
     </main>

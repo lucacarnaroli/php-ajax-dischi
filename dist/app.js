@@ -15821,13 +15821,9 @@ $(document).ready(function () {
   $.ajax({
     url: "http://localhost:8888/php-ajax-dischi/server-ajax.php",
     method: "GET",
-    // data: {
-    //   title: '' ,
-    //   author: '' ,
-    //   year: '' ,
-    // },
     success: function success(data) {
       console.log(data);
+      printCds(data);
     },
     error: function error(richiesta, stato, _error) {
       alert("E' avvenuto un errore. " + _error);
@@ -15842,7 +15838,7 @@ function printCds(cd) {
     ;
     var template = Handlebars.compile(source);
     var html = template(printCd);
-    $('.cds').append(html);
+    $('.cd').append(html);
   }
 }
 
