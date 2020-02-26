@@ -1,3 +1,3 @@
 <?php
-include _DIR_ .'/../server-ajax.php';  
+  include _DIR_ .'/../database.php';  
 ?>

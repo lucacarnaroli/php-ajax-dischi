@@ -15,13 +15,21 @@
     </header>
     <main>
       <script id="entry-template" type="text/x-handlebars-template">
-        <div class="entry">
-          <h1>{{title}}</h1>
-          <div class="body">
-            {{body}}
-          </div>
-        </div>
-</script>
+      <div class="cds">
+        <img class="poster" src="{{{poster}}}" alt="">
+        <ul class="descrizione">
+          <li>
+            <h3>{{title}}</h3>
+          </li>
+          <li>
+            <p>{{author}}</p>
+          </li>
+          <li>
+            <h6>{{year}}</h6>
+          </li>
+        </ul>
+      </div>
+      </script>
 
     </main>
     <script src="dist/app.js" charset="utf-8"></script>
