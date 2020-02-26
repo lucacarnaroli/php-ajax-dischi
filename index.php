@@ -15,13 +15,11 @@
     </header>
     <main>
       <div class="jumbo">
-        <div class="cd">
 
-        </div>
       </div>
 
       <script id="entry-template" type="text/x-handlebars-template">
-      <div class="cds">
+      <div class="cd">
         <img class="poster"src={{poster}} alt="">
         <ul class="descrizione">
           <li>
