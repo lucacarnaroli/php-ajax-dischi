@@ -16,7 +16,7 @@
     <main>
       <script id="entry-template" type="text/x-handlebars-template">
       <div class="cds">
-        <img class="poster" src="{{{poster}}}" alt="">
+        <img class="poster"src={{poster}} alt="">
         <ul class="descrizione">
           <li>
             <h3>{{title}}</h3>
@@ -29,6 +29,7 @@
           </li>
         </ul>
       </div>
+      
       </script>
 
     </main>
