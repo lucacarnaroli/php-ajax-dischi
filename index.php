@@ -1,15 +1,9 @@
-<?php
-include _DIR_ . '/../server.php';
-
-?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="dist/app.css">
-    <title>dischi</title>
+    <title>dischi-ajax</title>
   </head>
   <body>
     <header>
@@ -20,34 +14,16 @@ include _DIR_ . '/../server.php';
       </div>
     </header>
     <main>
-      <div class="jumbo">
-
-        <?php foreach ($database as $value) {?>
-          <div class="cd">
-            <img class="poster"src="<?php echo $value['poster'] ?>" alt="">
-            <ul class="descrizione">
-              <li>
-                <h3 class="title">
-                  <?php echo $value['title'];?>
-                </h3>
-              </li>
-              <li>
-                <p class="author">
-                  <?php echo $value['author'];?>
-                </p>
-              </li>
-              <li>
-                <h6 class="year">
-                  <?php echo $value['year'];?>
-                </h6>
-              </li>
-            </ul>
+      <script id="entry-template" type="text/x-handlebars-template">
+        <div class="entry">
+          <h1>{{title}}</h1>
+          <div class="body">
+            {{body}}
           </div>
-        <?php } ?>
+        </div>
+</script>
 
-
-      </div>
     </main>
-
+    <script src="dist/app.js" charset="utf-8"></script>
   </body>
 </html>
